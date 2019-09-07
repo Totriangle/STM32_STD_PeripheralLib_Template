@@ -2,18 +2,19 @@
 #define _DELAY_H_
 
 #include "sys.h"
+#include "timerstamp.h"
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
-void delay_init(void);
-void delay_ms(u16 nms);
-void delay_us(u32 nus);
+    void delay_init(void);
+    void delay_ms(u16 nms);
+    void delay_us(u32 nus);
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-

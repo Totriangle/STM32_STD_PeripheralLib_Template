@@ -1,4 +1,5 @@
 #include "led.h"
+#include "delay.h"
 
 void LED_Init(void)
 {
@@ -14,15 +15,14 @@ void LED_Init(void)
     GPIO_SetBits(GPIOC, GPIO_Pin_13);
 }
 
-
 void LED_Blink(uint8_t LEDn)
 {
     
     switch (LEDn)
     {
         case 0:  LED0 = !LED0; break;
-        //case 1:  LED1 = !LED1; break;
-        //case 2:  LED2 = !LED2; break;
+        // case 1:  LED1 = !LED1; break;
+        // case 2:  LED2 = !LED2; break;
     
         default:
             break;
